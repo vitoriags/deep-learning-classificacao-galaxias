@@ -78,7 +78,7 @@ A **segmentação** teve impacto mínimo, sugerindo que as redes aprendem a foca
 
 ## Acesse o Artigo
 
-Você pode ler o artigo completo em PDF clicando aqui: [Clique para abrir o PDF](https://github.com/vitoriags/deep-learning-classificacao-galaxias/raw/main/Estudo_Comparativo_entre_Arquiteturas_de_Redes_Neurais_Profundas_para_Classificação_de_Imagens_Baseado_em_Galáxias.pdf)
+Você pode ler o artigo completo em PDF: [Estudo_Comparativo_entre_Arquiteturas_de_Redes_Neurais_Profundas_para_Classificação_de_Imagens_Baseado_em_Galáxias](https://github.com/vitoriags/deep-learning-classificacao-galaxias/raw/main/Estudo_Comparativo_entre_Arquiteturas_de_Redes_Neurais_Profundas_para_Classificação_de_Imagens_Baseado_em_Galáxias.pdf)
 
 
 ---
