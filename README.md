@@ -37,7 +37,7 @@ Utilizamos a base do **Galaxy Zoo 2**, composta por:
 - Attention ResNet 92
 
 ### Transformers
-- CoAtNet0 (convolução + atenção)
+- CoAtNet0 (convolução + Mecanismo de Atenção)
 
 ---
 
