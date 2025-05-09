@@ -1,0 +1,12 @@
+# .gitignore
+__pycache__/
+.ipynb_checkpoints/
+*.h5
+*.pb
+.env
+.envrc
+data/
+models/
+.pre-commit-config.yaml
+uv.lock
+*.zip

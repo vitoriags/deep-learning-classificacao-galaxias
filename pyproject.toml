@@ -1,0 +1,16 @@
+[project]
+name = "deep-learning-classificacao-galaxias"
+version = "0.1.0"
+description = "Classificação de galáxias com deep learning"
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+  "tensorflow==2.15.0",
+  "keras",
+  "opencv-python",
+  "pandas",
+  "numpy",
+  "scikit-learn",
+  "ipykernel"
+]
