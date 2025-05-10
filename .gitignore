@@ -5,7 +5,8 @@ __pycache__/
 *.pb
 .env
 .envrc
-data/
+originals/
+segmented/
 models/
 .pre-commit-config.yaml
 uv.lock

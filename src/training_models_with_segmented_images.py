@@ -12,7 +12,7 @@ import funcoes as funcoes
 import models as models
 
 # Extract images from the ZIP file if not already extracted
-funcoes.extrair_zip(config.ZIP_PATH_ORIGINALS, config.IMAGES_DIR)
+funcoes.extrair_zip(config.ZIP_PATH_SEGMENTED, config.IMAGES_DIR)
 
 # Load the test CSV file into a DataFrame
 testdf = pd.read_csv(config.TEST_CSV_PATH, sep=",")
@@ -27,12 +27,12 @@ RotuloImagensTest = list(testdf["gz2_class"].map(lambda nome: int(nome)))
 print(RotuloImagensTest)
 
 # Print class distribution
-funcoes.contagemimagens(RotuloImagensTest, "originals")
+funcoes.contagemimagens(RotuloImagensTest, "segmented")
 
 # Define directories for training, validation, and test sets
-train_directory = config.DATA_DIR / "images" / "originals" / "train"
-validation_directory = config.DATA_DIR / "images" / "originals" / "validation"
-test_directory = config.DATA_DIR / "images" / "originals" / "test"
+train_directory = config.DATA_DIR / "images" / "segmented" / "train"
+validation_directory = config.DATA_DIR / "images" / "segmented" / "validation"
+test_directory = config.DATA_DIR / "images" / "segmented" / "test"
 
 # Load datasets using custom split function
 train_ds = funcoes.train_test_validation_split(train_directory, config.IMG_RESOLUTION)
