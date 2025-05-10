@@ -41,18 +41,26 @@ def train_test_validation_split(diretorio: str, tamanhoImg: int):
     return ds
 
 
-def extrair_zip(zip_path: Path, destino: Path):
-    if not destino.exists() or not any(destino.iterdir()):
-        print(f"Extraindo {zip_path.name} para {destino}...")
-        with zipfile.ZipFile(zip_path, "r") as zip_ref:
-            files = zip_ref.namelist()
-            total = len(files)
-            for i, file in enumerate(files, 1):
-                zip_ref.extract(file, destino)
-                print(f"[{i}/{total}] Extraído: {file}")
-        print("Extração concluída.\n")
-    else:
-        print("Imagens já extraídas. Pulando extração.\n")
+def extrair_zip(zip_path: Path, destino_base: Path):
+    nome_pasta_zip = zip_path.stem  # Ex: "segmented"
+    destino_final = destino_base / nome_pasta_zip
+
+    if destino_final.exists() and any(destino_final.iterdir()):
+        print(f"{zip_path.name} já foi extraído. Pulando extração.\n")
+        return
+
+    destino_final.mkdir(parents=True, exist_ok=True)
+
+    print(f"Extraindo {zip_path.name} para {destino_final}...\n")
+    with zipfile.ZipFile(zip_path, "r") as zip_ref:
+        files = zip_ref.namelist()
+        total = len(files)
+
+        for i, file in enumerate(files, 1):
+            zip_ref.extract(file, destino_base)  # mantém estrutura original do zip
+            print(f"[{i}/{total}] Extraído: {file}")
+
+    print("Extração concluída.\n")
 
 
 def moverpastas(pasta: str):
@@ -62,12 +70,12 @@ def moverpastas(pasta: str):
     shutil.rmtree(pasta)
 
 
-def contagemimagens(RotuloImagensTest):
+def contagemimagens(RotuloImagensTest, folder):
     BASE_DIR = Path(__file__).resolve().parent.parent
 
     pastas = [
-        BASE_DIR / "data" / "images" / "originals" / "train",
-        BASE_DIR / "data" / "images" / "originals" / "validation",
+        BASE_DIR / "data" / "images" / folder / "train",
+        BASE_DIR / "data" / "images" / folder / "validation",
     ]
 
     soma = 0
@@ -97,7 +105,7 @@ def contagemimagens(RotuloImagensTest):
     lista0 = sum(1 for x in RotuloImagensTest if x == 0)
     lista1 = sum(1 for x in RotuloImagensTest if x == 1)
 
-    print(BASE_DIR / "data" / "images" / "originals" / "test")
+    print(BASE_DIR / "data" / "images" / folder / "test")
     porcentagem = (lista0 * 100) / (lista0 + lista1)
     print(f"0 | {lista0} | {porcentagem:.1f}%")
 
