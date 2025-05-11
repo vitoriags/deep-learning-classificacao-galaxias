@@ -1,6 +1,7 @@
 # Estudo Comparativo entre Arquiteturas de Redes Neurais Profundas para Classificação de Imagens de Galáxias
 
 Este projeto apresenta um estudo comparativo entre diferentes arquiteturas de redes neurais profundas aplicadas à classificação morfológica de galáxias usando dados do projeto **Galaxy Zoo 2**.
+Você pode ler o artigo completo em PDF: [Baixar artigo](https://github.com/vitoriags/deep-learning-classificacao-galaxias/raw/main/Estudo_Comparativo_entre_Arquiteturas_de_Redes_Neurais_Profundas_para_Classificação_de_Imagens_Baseado_em_Galáxias.pdf)
 
 ---
 
@@ -73,13 +74,6 @@ A **segmentação** teve impacto mínimo, sugerindo que as redes aprendem a foca
 - Arquiteturas simples ainda são eficazes dependendo da tarefa.
 - Redes como CoAtNet mostram grande potencial quando há dados suficientes.
 - Esse projeto reforça o papel do **Deep Learning em automação científica**, especialmente em problemas de **visão computacional**.
-
----
-
-## Acesse o Artigo
-
-Você pode ler o artigo completo em PDF: [Baixar artigo](https://github.com/vitoriags/deep-learning-classificacao-galaxias/raw/main/Estudo_Comparativo_entre_Arquiteturas_de_Redes_Neurais_Profundas_para_Classificação_de_Imagens_Baseado_em_Galáxias.pdf)
-
 
 ---
 
