@@ -2,7 +2,7 @@
 
 Este projeto apresenta um estudo comparativo entre diferentes arquiteturas de redes neurais profundas aplicadas à classificação morfológica de galáxias usando dados do projeto **Galaxy Zoo 2**.
 
-Você pode ler o artigo completo em PDF: [Baixar artigo](https://github.com/vitoriags/deep-learning-classificacao-galaxias/raw/main/Estudo_Comparativo_entre_Arquiteturas_de_Redes_Neurais_Profundas_para_Classificação_de_Imagens_Baseado_em_Galáxias.pdf)
+Você pode ler o artigo completo em PDF: [Baixar artigo](https://github.com/vitoriags/deep-learning-classificacao-galaxias/blob/main/Estudo_Comparativo_entre_Arquiteturas_de_Redes_Neurais_Profundas_para_Classifica%C3%A7%C3%A3o_de_Imagens_Baseado_em_Gal%C3%A1xias.pdf)
 
 ---
 
